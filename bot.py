@@ -19,7 +19,7 @@ def frase_command(m):
 @bot.message_handler(commands=["dado"])
 def frase_command(m):
 	if m.text == '/dado' or m.text == '/dadoGamesBrazilBot' :
-		list = [""🎲"]
+		list = ["🎲"]
 		valor = randint(0, 100)
 		resposta = choice(list)
 		bot.reply_to(m, "{}".format(resposta), parse_mode='Markdown')
@@ -27,7 +27,7 @@ def frase_command(m):
 @bot.message_handler(commands=["boliche"])
 def frase_command(m):
 	if m.text == '/boliche' or m.text == '/bolicheGamesBrazilBot' :
-		list = [""🎳"]
+		list = ["🎳"]
 		valor = randint(0, 100)
 		resposta = choice(list)
 		bot.reply_to(m, "{}".format(resposta), parse_mode='Markdown')
